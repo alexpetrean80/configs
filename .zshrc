@@ -20,7 +20,8 @@ bindkey -v
 setopt CORRECT
 
 # Customize spelling correction prompt.
-SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]?\nAlso, how much you have been drinking lately?'
+SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]?
+Also, how much you have been drinking lately?'
 
 # Remove path separator from WORDCHARS.
 WORDCHARS=${WORDCHARS//[\/]}
@@ -104,11 +105,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 # Created by newuser for 5.8
 
 # fnm
-export PATH=/home/alex/.fnm:$PATH
-eval "`fnm env --multi`"
-
-
-export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
 
 # Aliases
 alias docker='podman'
@@ -118,6 +114,10 @@ alias ffs='sudo !!'
 alias zshconf='vim .zshrc'
 alias pubkey='cat .ssh/id_ed25519.pub'
 alias doom='~/.emacs.d/bin/doom'
-alias gvm="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
-alias edit='emacs'
 
+
+# fnm
+export PATH=/home/alex/.fnm:$PATH
+eval "`fnm env`"
+
+export GOROOT=/usr/bin/go
