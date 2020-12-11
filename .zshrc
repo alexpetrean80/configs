@@ -104,8 +104,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # Created by newuser for 5.8
 
-# fnm
-
 # Aliases
 alias docker='podman'
 alias vim='nvim'
@@ -115,9 +113,5 @@ alias zshconf='vim .zshrc'
 alias pubkey='cat .ssh/id_ed25519.pub'
 alias doom='~/.emacs.d/bin/doom'
 
-
-# fnm
-export PATH=/home/alex/.fnm:$PATH
-eval "`fnm env`"
-
-export GOROOT=/usr/bin/go
+export LOCAL_BIN=~/.local/bin
+export PATH=$LOCAL_BIN:$PATH
