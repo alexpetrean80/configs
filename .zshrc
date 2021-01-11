@@ -105,7 +105,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 # Created by newuser for 5.8
 
 # Aliases
-alias docker='podman'
 alias vim='nvim'
 alias reload='source ~/.zshrc'
 alias ffs='sudo !!'
