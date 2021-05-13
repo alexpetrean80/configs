@@ -21,6 +21,7 @@ antigen bundle golang
 antigen bundle command-not-found
 
 # syntax highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
 
