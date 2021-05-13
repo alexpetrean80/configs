@@ -27,9 +27,6 @@ antigen apply
 # use starship prompt
 eval "$(starship init zsh)"
 
-# set starship config file path
-export STARSHIP_CONFIG="$HOME"/Configs/shells/starship.toml
-
 # various aliases
 alias vim="nvim"
 alias ls="exa --long --header --git"

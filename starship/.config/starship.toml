@@ -1,9 +1,9 @@
 [character]
-success_symbol = '[➜](bold green) '
-error_symbol = '[✗](bold red) '
+success_symbol = '[➜](bold green)'
+error_symbol = '[✗](bold red)'
 
 [battery]
-format = '[$symbol]($style) '
+format = ' [$symbol]($style)'
 
 [[battery.display]]
 threshold = 25
@@ -39,3 +39,4 @@ disabled = false
 show_always = true
 style_root = 'bold red'
 style_user = 'bold cyan'
+format = " [$user]($style) in " 
