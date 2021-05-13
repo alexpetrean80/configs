@@ -35,4 +35,4 @@ alias find="fd"
 alias ps="procs"
 alias config="vim ./Configs/shells/.zshrc"
 alias reload="source ./Configs/shells/.zshrc"
-
+alias doom="$HOME/.emacs.d/bin/doom"
