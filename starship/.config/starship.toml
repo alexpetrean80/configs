@@ -11,7 +11,7 @@ success_symbol = '[➜](bold green)'
 error_symbol = '[✗](bold red)'
 
 [battery]
-format = ' [$symbol]($style)'
+format = '[$symbol]($style)'
 
 [[battery.display]]
 threshold = 25
@@ -34,7 +34,7 @@ disabled = false
 threshold = -1
 symbol = ' '
 style = 'bold dimmed green'
-format=' [$ram]($style) '
+format='[$ram]($style) '
 
 [shell]
 zsh_indicator = '%'
@@ -47,4 +47,4 @@ disabled = false
 show_always = true
 style_root = 'bold red'
 style_user = 'bold cyan'
-format = " [$user]($style) in " 
+format = "[$user]($style) in " 
