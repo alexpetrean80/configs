@@ -38,8 +38,7 @@ alias config="vim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 alias doom="$HOME/.emacs.d/bin/doom"
 alias pm="pamac"
+alias autoremove="sudo pacman -Rcns $(pacman -Qdtq)"
 
 ONE_DRIVE_MOUNTPOINT="$HOME/OneDrive"
-ONE_DRIVE_UNI_MOUNTPOINT="$HOME/OneDrive-Uni"
 export PERSONAL_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service --path $ONE_DRIVE_MOUNTPOINT)
-export UNI_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service --path $ONE_DRIVE_UNI_MOUNTPOINT)

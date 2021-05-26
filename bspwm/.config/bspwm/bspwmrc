@@ -47,3 +47,7 @@ nm-applet --indicator &
 
 # Cursor
 xsetroot -cursor_name left_ptr &
+
+# hack needed for Jebrains IDEs to work
+
+wmname LG3D &
