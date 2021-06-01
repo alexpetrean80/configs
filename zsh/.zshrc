@@ -6,7 +6,7 @@
 # |_|   \___|\__|_|  |_|\___|\__,_| #
 #                                   #
 
-source "$HOME"/GitStuff/antigen.zsh
+source "$HOME"/.antigen.d/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -30,6 +30,7 @@ eval "$(starship init zsh)"
 
 # various aliases
 alias vim="nvim"
+alias less="bat"
 alias ls="exa --long --header --git"
 alias grep="rg"
 alias find="fd"
@@ -38,7 +39,14 @@ alias config="vim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 alias doom="$HOME/.emacs.d/bin/doom"
 alias pm="pamac"
-alias autoremove="sudo pacman -Rcns $(pacman -Qdtq)"
+alias autoremove="sudo pacman -Rcns $(pacman -Qdtq) || paru -Rcns $(paru -Qdtq)"
+alias nvm="bash n"
+alias gvm="$GOPATH/bin/g"
 
 ONE_DRIVE_MOUNTPOINT="$HOME/OneDrive"
 export PERSONAL_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service --path $ONE_DRIVE_MOUNTPOINT)
+
+
+export GOPATH="$HOME/go"
+export GOROOT="$HOME/.go"
+export PATH="$GOPATH/bin:$HOME/.local/bin:$PATH"

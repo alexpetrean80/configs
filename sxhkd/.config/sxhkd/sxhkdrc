@@ -26,7 +26,7 @@ super + shift + space
 
 # run emacs
 super + e
-  emacsclient -c
+	emacs
 
 # power-menu 
 super + shift + e
