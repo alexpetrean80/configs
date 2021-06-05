@@ -42,6 +42,8 @@ alias pm="pamac"
 alias autoremove="sudo pacman -Rcns $(pacman -Qdtq) || paru -Rcns $(paru -Qdtq)"
 alias nvm="bash n"
 alias gvm="$GOPATH/bin/g"
+alias btm="btm --color nord"
+alias deemix="deemix -b flac"
 
 ONE_DRIVE_MOUNTPOINT="$HOME/OneDrive"
 export PERSONAL_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service --path $ONE_DRIVE_MOUNTPOINT)
@@ -49,4 +51,4 @@ export PERSONAL_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service
 
 export GOPATH="$HOME/go"
 export GOROOT="$HOME/.go"
-export PATH="$GOPATH/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"
