@@ -13,20 +13,16 @@ super + space
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 13"
 
 # show open window
-super + ctrl + space
+super + shift + space
 	rofi -modi drun -show window -line-padding 4 \
                 -columns 2 -padding 50 -hide-scrollbar -terminal kitty \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 13"
 
 # show ssh sesssions
-super + shift + space
+super + ctrl + space
   rofi -modi drun -show ssh -line-padding 4 \
                 -columns 2 -padding 50 -hide-scrollbar -terminal kitty \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 13"
-
-# run emacs
-super + e
-	emacs
 
 # power-menu 
 super + shift + e
@@ -181,6 +177,10 @@ super + w
 
 super + n 
   thunar  
+
+super + e
+  emacs
+
 
 super + F1
   ~/.config/bspwm/scripts/keybindings_rofi.sh

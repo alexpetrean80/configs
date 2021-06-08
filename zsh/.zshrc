@@ -6,7 +6,7 @@
 # |_|   \___|\__|_|  |_|\___|\__,_| #
 #                                   #
 
-source "$HOME"/.antigen.d/antigen.zsh
+source "$HOME"/.antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -39,7 +39,7 @@ alias config="vim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 alias doom="$HOME/.emacs.d/bin/doom"
 alias pm="pamac"
-alias autoremove="sudo pacman -Rcns $(pacman -Qdtq) || paru -Rcns $(paru -Qdtq)"
+alias autoremove="sudo pacman -Rcns $(pacman -Qdtq) || yay -Rcns $(yay -Qdtq)"
 alias nvm="bash n"
 alias gvm="$GOPATH/bin/g"
 alias btm="btm --color nord"
@@ -52,3 +52,5 @@ export PERSONAL_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service
 export GOPATH="$HOME/go"
 export GOROOT="$HOME/.go"
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"
+
+export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g

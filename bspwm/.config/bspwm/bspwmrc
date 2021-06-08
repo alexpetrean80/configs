@@ -47,7 +47,7 @@ bspc config active_border_color "#073642"
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Wallpaper
-$HOME/.fehbg &
+nitrogen --restore &
 # Dex
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 # Picom
