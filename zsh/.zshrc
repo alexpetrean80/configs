@@ -29,7 +29,8 @@ antigen apply
 eval "$(starship init zsh)"
 
 # various aliases
-alias vim="nvim"
+# alias vim="nvim"
+alias mpv="mpv --shuffle --no-video $HOME/OneDrive/Music"
 alias less="bat"
 alias ls="exa --long --header --git"
 alias grep="rg"
@@ -40,7 +41,7 @@ alias reload="source $HOME/.zshrc"
 alias doom="$HOME/.emacs.d/bin/doom"
 alias pm="pamac"
 alias autoremove="sudo pacman -Rcns $(pacman -Qdtq) || yay -Rcns $(yay -Qdtq)"
-alias nvm="bash n"
+alias nvm="fnm"
 alias gvm="$GOPATH/bin/g"
 alias btm="btm --color nord"
 alias deemix="deemix -b flac"
@@ -51,6 +52,9 @@ export PERSONAL_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service
 
 export GOPATH="$HOME/go"
 export GOROOT="$HOME/.go"
-export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.npm/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"
 
-export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+
+# fnm
+export PATH=/home/alexp/.fnm:$PATH
+eval "`fnm env`"

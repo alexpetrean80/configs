@@ -179,7 +179,7 @@ super + n
   thunar  
 
 super + e
-  emacs
+  nvim
 
 
 super + F1
