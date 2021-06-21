@@ -9,7 +9,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch Polybar
 polybar top -c ~/.config/polybar/config.ini &
 
-if [[ $(xrandr --query | grep 'DP1') = *connected* ]]; then
+if [[ $(xrandr --query | grep 'DP3') = *connected* ]]; then
 	polybar top2 -c ~/.config/polybar/config.ini &
 fi
 

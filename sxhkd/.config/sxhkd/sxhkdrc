@@ -37,8 +37,8 @@ super + Escape
 #
 
 # quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
+super + shift + r
+	bspc wm -r
 
 # close and kill
 super + {_,shift + }q
@@ -166,7 +166,7 @@ XF86MonBrightnessDown
 
 # Screenshot
 Print
-  scrot ~/Pictures/Screenshot-$(date +%F_%T).png
+ flameshot launcher
 
 super+Print
   ~/.config/bspwm/scripts/screenshot.sh
@@ -176,10 +176,13 @@ super + w
   firefox
 
 super + n 
-  thunar  
+  pcmanfm  
 
 super + e
-  nvim
+  emacs
+
+super + m
+  mailspring
 
 
 super + F1

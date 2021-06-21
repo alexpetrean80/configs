@@ -34,27 +34,19 @@ alias mpv="mpv --shuffle --no-video $HOME/OneDrive/Music"
 alias less="bat"
 alias ls="exa --long --header --git"
 alias grep="rg"
-alias find="fd"
-alias ps="procs"
+#alias ps="procs"
 alias config="vim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 alias doom="$HOME/.emacs.d/bin/doom"
-alias pm="pamac"
-alias autoremove="sudo pacman -Rcns $(pacman -Qdtq) || yay -Rcns $(yay -Qdtq)"
+alias autoremove="sudo pacman -Rcns $(pacman -Qdtq)"
 alias nvm="fnm"
 alias gvm="$GOPATH/bin/g"
-alias btm="btm --color nord"
 alias deemix="deemix -b flac"
 
 ONE_DRIVE_MOUNTPOINT="$HOME/OneDrive"
 export PERSONAL_ONE_DRIVE_SERVICE=$(systemd-escape --template onedriver@.service --path $ONE_DRIVE_MOUNTPOINT)
 
 
-export GOPATH="$HOME/go"
 export GOROOT="$HOME/.go"
-export PATH="$HOME/.npm/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"
-
-
-# fnm
-export PATH=/home/alexp/.fnm:$PATH
-eval "`fnm env`"
+export GOPATH="$HOME/.gopath"
+export PATH="$HOME/.emacs.d/bin:$HOME/.npm/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"

@@ -8,15 +8,19 @@ if [[ $MONITORS -eq 3 ]]; then
 	# Set display from arandr saved script
 	sh ~/.screenlayout/monitor.sh &
 
-	bspc monitor DP3 -d I II III IV
-	bspc monitor eDP1 -d V VI VII VIII
-	bspc monitor DP1 -d IX X
+	bspc monitor DP3 -d 1 2 3 4
+	bspc monitor eDP1 -d 5 6 7 8
+	bspc monitor DP1 -d 9 10
+elif [[ $MONITORS -eq 2 ]]; then
+	sh ~/.screenlayout/monitor2.sh
+	bspc monitor DP3 -d 1 2 3 4 5
+	bspc monitor eDP1 -d 6 7 8 9 10
 else
-	bspc monitor -d I II III IV V VI VII VIII IX X
+	bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 fi
 
-bspc config border_width 2
-bspc config window_gap 10
+bspc config border_width 0
+bspc config window_gap 15
 
 bspc config split_ratio 0.52
 bspc config borderless_monocle true
@@ -51,7 +55,7 @@ nitrogen --restore &
 # Dex
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 # Picom
-picom -CGb &
+picom &
 # Network Applet
 nm-applet --indicator &
 
